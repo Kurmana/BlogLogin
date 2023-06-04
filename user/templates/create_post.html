@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% block title %} Создание поста {% endblock %}
+
+
+{% block content %}
+<body>
+<h2>Создание поста</h2>
+<form action="" method="post" enctype="multipart/form-data">
+  {{ form.as_p }}{% csrf_token %}
+  <button type="submit">Создать</button>
+</form>
+</body>
+{% endblock %}
